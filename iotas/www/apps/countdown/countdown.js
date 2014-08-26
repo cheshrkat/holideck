@@ -71,10 +71,10 @@ function countdown() {
 			} else {
 				if (t <= 30) {
 					console.log("flashing");
-					if ((t % 2) == 0) {
-						this.currentLight.gradient(255, 0, 0, 0, 0, 0, 45);
+					if ((t % 2) === 0) {
+						this.currentLight.gradient(255, 0, 0, 105, 0, 0, 25);
 					} else {
-						this.currentLight.gradient(0, 0, 0, 255, 0, 0, 45);
+						this.currentLight.gradient(105, 0, 0, 255, 0, 0, 25);
 					}
 				}
 			}
@@ -88,7 +88,7 @@ function countdown() {
 	  {
 		clearInterval(theApp.counter);
 		theApp.drawCountdown();
-		this.currentLight.gradient(255, 0, 0, 0, 0, 0, 45);
+		this.currentLight.gradient(255, 0, 0, 0, 0, 0, 128);
 		return;
 	  }
 	 theApp.fireLight(theApp.count);
